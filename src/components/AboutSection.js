@@ -5,6 +5,7 @@ import home1 from "../img/home1.png";
 
 import { motion } from "framer-motion";
 import { titleAnim, fade, photoAnim } from "../animation";
+import Wave from "./Wave";
 
 import { About, Description, Image, Hide } from "../styles";
 const AboutSection = () => {
@@ -37,6 +38,7 @@ const AboutSection = () => {
           alt="Men with a camera"
         ></motion.img>
       </Image>
+      <Wave></Wave>
     </About>
   );
 };
