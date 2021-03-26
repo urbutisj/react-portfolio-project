@@ -4,7 +4,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { pageAnimation, titleAnim } from "../animation";
 import styled from "styled-components";
-
 const ContactUs = () => {
   return (
     <ContactStyle
@@ -47,11 +46,18 @@ const ContactStyle = styled(motion.div)`
   padding: 5rem 10rem;
   color: #353535;
   min-height: 90vh;
+  @media (max-width: 1500px) {
+    padding: 2rem;
+    font-size: 1rem;
+  }
 `;
 
 const Title = styled.div`
   margin-bottom: 4rem;
   color: #000;
+  @media (max-width: 1500px) {
+    margin-top: 5rem;
+  }
 `;
 
 const Hide = styled.div`
